@@ -8,28 +8,44 @@
     <title>Momentum</title>
   </head>
   <body>
-    <h2 id="clock">00:00:00</h2>
-    <form class="hidden" id="login-form">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <input type="submit" value="Log In" />
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo_form">
-      <input type="text" placeholder="Write To Do and Press" />
-    </form>
-    <ul id="todo_list"></ul>
-    <div id="quote">
-      <span></span>
-      <span></span>
-    </div>
-    <div id="weather">
-      <span></span>
-      <span></span>
+    <div class="momentum">
+      <div class="momentum-top">
+        <div id="weather">
+          <span></span>
+          <div class="weather-detail">
+            <span id="weather-detail-temp"></span>
+            <span id="weather-detail-info"></span>
+          </div>
+        </div>
+      </div>
+      <div class="momentum-mid">
+        <h2 id="clock">00:00:00</h2>
+        <form id="login-form" class="hidden">
+          <div class="login-form-info">
+            <input
+              required
+              maxlength="15"
+              type="text"
+              placeholder="What is your name?"
+            />
+            <input type="submit" value="Come In!" />
+          </div>
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+        <form id="todo_form" class="hidden">
+          <div class="todo_form_info">
+            <spna>Write To Do and Press</spna>
+            <input type="text" />
+          </div>
+        </form>
+        <ul id="todo_list"></ul>
+      </div>
+      <div class="momentum-bottom">
+        <div id="quote">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </div>
 
     <script src="js/greetings.js"></script>
